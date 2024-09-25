@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="s_popup_always_show" model="ir.ui.view">
+            <field name="name">s_popup_always_show</field>
+            <field name="key">website.s_popup_always_show</field>
+            <field name="inherit_id" ref="website.s_popup"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('s_popup')]/div[hasclass('modal')]" position="attributes">
+                    <attribute name="t-attf-data-consents-duration" t-if="not always_show">1</attribute>
+                    <attribute name="t-attf-data-consents-duration" t-if="always_show"></attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
