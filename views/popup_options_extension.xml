@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="s_popup_options_always_show" model="ir.ui.view">
+            <field name="name">s_popup_options_always_show</field>
+            <field name="key">website.s_popup_options_always_show</field>
+            <field name="inherit_id" ref="website.s_popup_options"/>
+            <field name="arch" type="xml">
+                <xpath expr="//t[@t-set='extra_popup_options']" position="inside">
+                    <we-row string="Hide For">
+                        <we-checkbox data-name="hide_for" t-att-data-select-data-attribute="not hide_for and '3' or ''" data-attribute-name="consentsDuration" data-no-preview="true"/>
+                    </we-row>
+                </xpath>
+                <xpath expr="//we-input[@data-attribute-name='consentsDuration']" position="attributes">
+                    <attribute name="data-dependencies">hide_for</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

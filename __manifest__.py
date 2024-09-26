@@ -23,8 +23,6 @@
     # always loaded
     'data': [
         'views/popup_options_extension.xml',
-        'views/views.xml',
-        'views/templates.xml',
     ],
 }
 

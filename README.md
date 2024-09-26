@@ -15,7 +15,7 @@ ASAid Popup Extension is an Odoo 17 module that enhances the functionality of we
 
 1. Clone this repository into your Odoo addons directory:
    ```
-   git clone https://github.com/your-repository/website_asaid_popup_extension.git
+   git clone https://github.com/fbhikmawan/website_asaid_popup_extension.git
    ```
 2. Update your Odoo addons path to include this module.
 3. Restart your Odoo server.
@@ -28,8 +28,8 @@ After installation:
 
 1. Go to Website > Edit Website
 2. Add or edit a Popup block
-3. In the Popup options, you'll find a new "Always Show" checkbox
-4. Enable this option to make the popup appear on every page load, regardless of previous interactions
+3. In the Popup options, you'll find a new "Hide For" toggle option
+4. Enable this option to make the popup appear on every time the page load
 
 ## Configuration
 
