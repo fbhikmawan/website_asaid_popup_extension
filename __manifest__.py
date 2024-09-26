@@ -3,10 +3,9 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 {
     'name': "ASAid Popup Extension",
-    'summary': "Add 'Always Show' option to Popup block options",
+    'summary': "Add 'Hide For' toggle option to Popup block options to override the `Hide For` input field",
     'description': """
-        This module adds an 'Always Show' option to the Popup block options in the website builder.
-        This option overrides the 'Hide For' setting, ensuring the popup always displays even if previously closed by the visitor.
+        ASAid Popup Extension is an Odoo 17 module that enhances the functionality of website popups. It adds an 'Hide For' toggle option to the Popup block options in the website builder, allowing for more flexible control over popup block hide for behavior.
     """,
     'author': "ASAid Group Investment",
     'website': "https://www.asaidgroup.com",
