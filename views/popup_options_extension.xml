@@ -6,13 +6,20 @@
             <field name="key">website.s_popup_options_always_show</field>
             <field name="inherit_id" ref="website.s_popup_options"/>
             <field name="arch" type="xml">
-                <xpath expr="//t[@t-set='extra_popup_options']" position="inside">
+                <!-- Insert the checkbox before the 'Hide For' input -->
+                <xpath expr="//we-input[@data-attribute-name='consentsDuration']" position="before">
                     <we-row string="Hide For">
-                        <we-checkbox data-name="hide_for" t-att-data-select-data-attribute="not hide_for and '3' or ''" data-attribute-name="consentsDuration" data-no-preview="true"/>
+                        <we-checkbox 
+                            data-name="hide_for" 
+                            t-att-data-select-data-attribute="not hide_for and '3' or ''" 
+                            data-attribute-name="consentsDuration" 
+                            data-no-preview="true"
+                            data-dependencies="!onclick_opt"/>
                     </we-row>
                 </xpath>
                 <xpath expr="//we-input[@data-attribute-name='consentsDuration']" position="attributes">
                     <attribute name="data-dependencies">hide_for</attribute>
+                    <attribute name="string">⌙ Duration</attribute>
                 </xpath>
             </field>
         </record>
